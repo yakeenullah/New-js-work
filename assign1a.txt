@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			JavaScript | Passing a function as parameter
+		</title>
+	</head>
+	
+	<body style = "text-align:center;">
+		
+		<h1 style = "color:red;" >
+			Function as as arguments
+		</h1>
+		
+		<p>
+			Passing a function as an argument to the function is quite similar to the passing                  variable as an argument to the function. Below examples describes to passing a function as a parameter to another function.
+		</p>
+		
+		<!-- Function call after clicking the button -->
+		<button onclick = "outer(inner)">
+			Click Here
+		</button>	
+		
+		<script>
+			function inner(value){
+				return 'hello User!';
+			}
+			function outer(func){
+				alert(func());
+			}
+		</script>
+	</body>
+</html>					

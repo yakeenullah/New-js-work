@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript String Methods</h2>
+
+<p>The charAt() method returns the character at a given position in a string:</p>
+<p id="demo"> </p>
+
+
+<script>
+const getInitials = (firstName,lastName) => firstName.charAt(0) + lastName.charAt(0);
+
+document.getElementById("demo").innerHTML = getInitials("Mohd","Ansari");
+</script>
+
+</body>
+</html>
+
